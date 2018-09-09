@@ -1,0 +1,216 @@
+﻿division_template = {
+	name = "Divisão de Infantaria"
+	division_names_group = BRA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Divisão de Milicia"
+	division_names_group = BRA_MIL_01
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Divisão de Cavalaria"
+	division_names_group = BRA_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Divisão de Guarda"
+	division_names_group = BRA_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Armored-Division"
+	division_names_group = BRA_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+
+
+	division = {
+		#name = "Guarda Presidencial"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10980
+		division_template = "Divisão de Guarda"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		#name = ""
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10447
+		division_template = "Divisão de Milicia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		#name = ""
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10513
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		#name = ""
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10513
+		division_template = "Divisão de Milicia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		#name = ""
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10946
+		division_template = "Divisão de Milicia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		#name = ""
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10980
+		division_template = "Divisão de Milicia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		#name = ""
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10447
+		division_template = "Divisão de Cavalaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+
+	navy = {
+		name = "Marinha do Brasil"
+		base = 10980
+		location = 10980
+		ship = { name = "NMB Minas Gerais" definition = battleship equipment = { battleship_pre = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB São Paulo" definition = battleship equipment = { battleship_pre = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Bahia" definition = light_cruiser equipment = { light_cruiser_pre = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Rio Grande do Sul" definition = light_cruiser equipment = { light_cruiser_pre = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Sergipe" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Rio Grande do Norte" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Piauí" definition = destroyer equipment = { destroyer_pre = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Marechal Floriano" definition = destroyer equipment = { destroyer_pre = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Parahyba" definition = destroyer equipment = { destroyer_pre = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Alagoa'" definition = destroyer equipment = { destroyer_pre = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Santa Catarina" definition = destroyer equipment = { destroyer_pre = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Mato Grosso" definition = destroyer equipment = { destroyer_pre = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Pará" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Amazonas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Maranhão" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Guanabara" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NMB Pernambuco" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "T-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "T-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "T-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "T-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+	}
+}
+
+air_wings = {
+
+	500 = {
+
+		fighter_equipment_0 = {
+			owner = "CAN"
+			amount = 25
+		}
+	}
+}
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+		}
+		requested_factories = 5
+		progress = 0.82
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+		}
+		requested_factories = 1
+		progress = 0.39
+		efficiency = 40
+	}
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+		}
+		requested_factories = 1
+		progress = 0.42
+		efficiency = 100
+	}
+}
