@@ -1,0 +1,32 @@
+state = {
+	id = 1080
+	name = "Berlin"
+	manpower = 1000000
+	buildings_max_level_factor = 1
+
+	state_category = megalopolis
+
+	provinces = {
+		6521
+	}
+	
+	history = {
+		owner = FCB		
+		add_core_of = FCB
+		victory_points = {
+			6521 50
+		}
+		
+
+		buildings = {
+			infrastructure = 8
+			arms_factory = 3
+			industrial_complex = 4
+			anti_air_building = 2
+			air_base = 6
+
+		}
+	}
+
+	
+}
