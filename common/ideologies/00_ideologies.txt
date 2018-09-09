@@ -1,0 +1,309 @@
+ideologies = {
+	
+	anarchist = {
+	
+		types = {
+			anarcho_communist = { 
+			}
+			anarcho_syndicalist = { 
+			}
+			anarchist_no_adjectives = { 
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_ANARCHIST_1" # Faction names used by the ai when an ai with this ideology creates a faction
+		}
+		
+		color = { 0 0 0 } # RGB ideology colour
+		
+		rules = { # Rules for the ideology.  (yes/no)
+			can_declare_war_on_same_ideology = no 
+			can_force_government = yes 
+			can_send_volunteers = yes 
+			can_puppet = no 
+			can_lower_tension = no 
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = # Can guarantee nations with different ideologies. Not required
+		}
+		
+		war_impact_on_world_tension = # Goes from -1 to 1. Increases or decreases the world tension created by this nation
+		faction_impact_on_world_tension = # Goes from -1 to 1. Increases or decreases a faction of this ideologies impact on tension
+		
+		modifiers = { # More rules for the ideology
+			generate_wargoal_tension = # Required world tension to start justifying a war (0 to 1)
+			join_faction_tension = # Required world tension to join a faction (0 to 1)
+			lend_lease_tension = 0
+			send_volunteers_tension = 0
+			guarantee_tension = # Required tension to guarantee a nation (0 to 1)
+			take_states_cost_factor = # Changes the cost of states in a peace deal. 0.25 would increase state cost by 25% (-1 to 1)
+			annex_cost_factor = # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
+			drift_defence_factor = # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
+			puppet_cost_factor = # Changes the cost of puppeting a nation in a peace deal (-1 to 1)
+		}
+
+		can_be_boosted = # Can you boost this ideologies popularity in another country (yes/no)
+		can_collaborate = #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_<ideology> = yes # Determines what ai this ideology will use (democratic, communism, fascism, neutral or make a new one.)
+	}
+	centralist = {
+	
+		types = {
+			totalist = { 
+			}
+			vanguardist = { 
+			}
+			orthodox centralist = { # Used when assigning ideologies to leaders. Eg. democratic has conservatism, liberalism and socialism
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_ANARCHIST_1" # Faction names used by the ai when an ai with this ideology creates a faction
+		}
+		
+		color = { 120 3 3 } # RGB ideology colour. The colour it appears when in a political pie chart or next to the chart
+		
+		rules = { # Rules for the ideology.  (yes/no)
+			can_declare_war_on_same_ideology = # Declare war on same ideology. Not required
+			can_force_government = # Can change ideology in peace deal. Required
+			can_send_volunteers = # Can send volunteers. Required
+			can_puppet = # Can puppet a nation at peace deal. Required
+			can_lower_tension = # Lowers tension at peace deal. Not required
+			can_only_justify_war_on_threat_country = # Can only justify on a nation that has generated world tension/threat. Not required
+			can_guarantee_other_ideologies = # Can guarantee nations with different ideologies. Not required
+		}
+		
+		war_impact_on_world_tension = # Goes from -1 to 1. Increases or decreases the world tension created by this nation
+		faction_impact_on_world_tension = # Goes from -1 to 1. Increases or decreases a faction of this ideologies impact on tension
+		
+		modifiers = { # More rules for the ideology
+			generate_wargoal_tension = # Required world tension to start justifying a war (0 to 1)
+			join_faction_tension = # Required world tension to join a faction (0 to 1)
+			lend_lease_tension = # Required tension to start a lend-lease (0 to 1)
+			send_volunteers_tension = # Required tension to send volunteers (0 to 1)
+			guarantee_tension = # Required tension to guarantee a nation (0 to 1)
+			take_states_cost_factor = # Changes the cost of states in a peace deal. 0.25 would increase state cost by 25% (-1 to 1)
+			annex_cost_factor = # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
+			drift_defence_factor = # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
+			puppet_cost_factor = # Changes the cost of puppeting a nation in a peace deal (-1 to 1)
+		}
+
+		can_be_boosted = # Can you boost this ideologies popularity in another country (yes/no)
+		can_collaborate = #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_<ideology> = yes # Determines what ai this ideology will use (democratic, communism, fascism, neutral or make a new one.)
+	}
+	social transhumanist = {
+	
+		types = {
+			anarcho_transhumanist = { 
+			}
+			transhuman_socialist= { 
+			}
+			posthumanist = { 
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_ANARCHIST_1" # Faction names used by the ai when an ai with this ideology creates a faction
+		}
+		
+		color = { 43 46 235 } # RGB ideology colour. The colour it appears when in a political pie chart or next to the chart
+		
+		rules = { # Rules for the ideology.  (yes/no)
+			can_declare_war_on_same_ideology = # Declare war on same ideology. Not required
+			can_force_government = # Can change ideology in peace deal. Required
+			can_send_volunteers = # Can send volunteers. Required
+			can_puppet = # Can puppet a nation at peace deal. Required
+			can_lower_tension = # Lowers tension at peace deal. Not required
+			can_only_justify_war_on_threat_country = # Can only justify on a nation that has generated world tension/threat. Not required
+			can_guarantee_other_ideologies = # Can guarantee nations with different ideologies. Not required
+		}
+		
+		war_impact_on_world_tension = # Goes from -1 to 1. Increases or decreases the world tension created by this nation
+		faction_impact_on_world_tension = # Goes from -1 to 1. Increases or decreases a faction of this ideologies impact on tension
+		
+		modifiers = { # More rules for the ideology
+			generate_wargoal_tension = # Required world tension to start justifying a war (0 to 1)
+			join_faction_tension = # Required world tension to join a faction (0 to 1)
+			lend_lease_tension = # Required tension to start a lend-lease (0 to 1)
+			send_volunteers_tension = # Required tension to send volunteers (0 to 1)
+			guarantee_tension = # Required tension to guarantee a nation (0 to 1)
+			take_states_cost_factor = # Changes the cost of states in a peace deal. 0.25 would increase state cost by 25% (-1 to 1)
+			annex_cost_factor = # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
+			drift_defence_factor = # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
+			puppet_cost_factor = # Changes the cost of puppeting a nation in a peace deal (-1 to 1)
+		}
+
+		can_be_boosted = # Can you boost this ideologies popularity in another country (yes/no)
+		can_collaborate = #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_<ideology> = yes # Determines what ai this ideology will use (democratic, communism, fascism, neutral or make a new one.)
+	}
+	syndicalist = {
+	
+		types = {
+			syndicalist = { 
+			}
+			anarcho_syndicalist = { # Used when assigning ideologies to leaders. Eg. democratic has conservatism, liberalism and socialism
+			}
+			pure_black_anarchist = { # Used when assigning ideologies to leaders. Eg. democratic has conservatism, liberalism and socialism
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_ANARCHIST_1" # Faction names used by the ai when an ai with this ideology creates a faction
+		}
+		
+		color = { 235 43 43 } # RGB ideology colour. The colour it appears when in a political pie chart or next to the chart
+		
+		rules = { # Rules for the ideology.  (yes/no)
+			can_declare_war_on_same_ideology = # Declare war on same ideology. Not required
+			can_force_government = # Can change ideology in peace deal. Required
+			can_send_volunteers = # Can send volunteers. Required
+			can_puppet = # Can puppet a nation at peace deal. Required
+			can_lower_tension = # Lowers tension at peace deal. Not required
+			can_only_justify_war_on_threat_country = # Can only justify on a nation that has generated world tension/threat. Not required
+			can_guarantee_other_ideologies = # Can guarantee nations with different ideologies. Not required
+		}
+		
+		war_impact_on_world_tension = # Goes from -1 to 1. Increases or decreases the world tension created by this nation
+		faction_impact_on_world_tension = # Goes from -1 to 1. Increases or decreases a faction of this ideologies impact on tension
+		
+		modifiers = { # More rules for the ideology
+			generate_wargoal_tension = # Required world tension to start justifying a war (0 to 1)
+			join_faction_tension = # Required world tension to join a faction (0 to 1)
+			lend_lease_tension = # Required tension to start a lend-lease (0 to 1)
+			send_volunteers_tension = # Required tension to send volunteers (0 to 1)
+			guarantee_tension = # Required tension to guarantee a nation (0 to 1)
+			take_states_cost_factor = # Changes the cost of states in a peace deal. 0.25 would increase state cost by 25% (-1 to 1)
+			annex_cost_factor = # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
+			drift_defence_factor = # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
+			puppet_cost_factor = # Changes the cost of puppeting a nation in a peace deal (-1 to 1)
+		}
+
+		can_be_boosted = # Can you boost this ideologies popularity in another country (yes/no)
+		can_collaborate = #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_<ideology> = yes # Determines what ai this ideology will use (democratic, communism, fascism, neutral or make a new one.)
+	}
+	social democrat = {
+	
+		types = {
+			anarcho_communist = { # Used when assigning ideologies to leaders. Eg. democratic has conservatism, liberalism and socialism
+			}
+			anarcho_syndicalist = { # Used when assigning ideologies to leaders. Eg. democratic has conservatism, liberalism and socialism
+			}
+			pure_black_anarchist = { # Used when assigning ideologies to leaders. Eg. democratic has conservatism, liberalism and socialism
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_ANARCHIST_1" # Faction names used by the ai when an ai with this ideology creates a faction
+		}
+		
+		color = { 235 43 149 } # RGB ideology colour. The colour it appears when in a political pie chart or next to the chart
+		
+		rules = { # Rules for the ideology.  (yes/no)
+			can_declare_war_on_same_ideology = # Declare war on same ideology. Not required
+			can_force_government = # Can change ideology in peace deal. Required
+			can_send_volunteers = # Can send volunteers. Required
+			can_puppet = # Can puppet a nation at peace deal. Required
+			can_lower_tension = # Lowers tension at peace deal. Not required
+			can_only_justify_war_on_threat_country = # Can only justify on a nation that has generated world tension/threat. Not required
+			can_guarantee_other_ideologies = # Can guarantee nations with different ideologies. Not required
+		}
+		
+		war_impact_on_world_tension = # Goes from -1 to 1. Increases or decreases the world tension created by this nation
+		faction_impact_on_world_tension = # Goes from -1 to 1. Increases or decreases a faction of this ideologies impact on tension
+		
+		modifiers = { # More rules for the ideology
+			generate_wargoal_tension = # Required world tension to start justifying a war (0 to 1)
+			join_faction_tension = # Required world tension to join a faction (0 to 1)
+			lend_lease_tension = # Required tension to start a lend-lease (0 to 1)
+			send_volunteers_tension = # Required tension to send volunteers (0 to 1)
+			guarantee_tension = # Required tension to guarantee a nation (0 to 1)
+			take_states_cost_factor = # Changes the cost of states in a peace deal. 0.25 would increase state cost by 25% (-1 to 1)
+			annex_cost_factor = # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
+			drift_defence_factor = # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
+			puppet_cost_factor = # Changes the cost of puppeting a nation in a peace deal (-1 to 1)
+		}
+
+		can_be_boosted = # Can you boost this ideologies popularity in another country (yes/no)
+		can_collaborate = #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_<ideology> = yes # Determines what ai this ideology will use (democratic, communism, fascism, neutral or make a new one.)
+	}
+	liberal = {
+	
+		types = {
+			social liberal = { # Used when assigning ideologies to leaders. Eg. democratic has conservatism, liberalism and socialism
+			}
+			market liberal = { # Used when assigning ideologies to leaders. Eg. democratic has conservatism, liberalism and socialism
+			}
+			centrist liberal = { # Used when assigning ideologies to leaders. Eg. democratic has conservatism, liberalism and socialism
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_ANARCHIST_1" # Faction names used by the ai when an ai with this ideology creates a faction
+		}
+		
+		color = { 235 229 43 } # RGB ideology colour. The colour it appears when in a political pie chart or next to the chart
+		
+		rules = { # Rules for the ideology.  (yes/no)
+			can_declare_war_on_same_ideology = # Declare war on same ideology. Not required
+			can_force_government = # Can change ideology in peace deal. Required
+			can_send_volunteers = # Can send volunteers. Required
+			can_puppet = # Can puppet a nation at peace deal. Required
+			can_lower_tension = # Lowers tension at peace deal. Not required
+			can_only_justify_war_on_threat_country = # Can only justify on a nation that has generated world tension/threat. Not required
+			can_guarantee_other_ideologies = # Can guarantee nations with different ideologies. Not required
+		}
+		
+		war_impact_on_world_tension = # Goes from -1 to 1. Increases or decreases the world tension created by this nation
+		faction_impact_on_world_tension = # Goes from -1 to 1. Increases or decreases a faction of this ideologies impact on tension
+		
+		modifiers = { # More rules for the ideology
+			generate_wargoal_tension = # Required world tension to start justifying a war (0 to 1)
+			join_faction_tension = # Required world tension to join a faction (0 to 1)
+			lend_lease_tension = # Required tension to start a lend-lease (0 to 1)
+			send_volunteers_tension = # Required tension to send volunteers (0 to 1)
+			guarantee_tension = # Required tension to guarantee a nation (0 to 1)
+			take_states_cost_factor = # Changes the cost of states in a peace deal. 0.25 would increase state cost by 25% (-1 to 1)
+			annex_cost_factor = # Changes the cost of entirely annexing a nation in a peace deal. 0.5 would increase annexing cost by 50% (-1 to 1)
+			justify_war_goal_when_in_major_war_time = # Changes the cost of justifying a war while in a major war. 0.5 would decrease time by 50% (0 to 1)
+			drift_defence_factor = # Natural drift defence for the ideology # 0.3 would grant 30% drift defence (-1 to 1)
+			puppet_cost_factor = # Changes the cost of puppeting a nation in a peace deal (-1 to 1)
+		}
+
+		can_be_boosted = # Can you boost this ideologies popularity in another country (yes/no)
+		can_collaborate = #
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_<ideology> = yes # Determines what ai this ideology will use (democratic, communism, fascism, neutral or make a new one.)
+	}
+}

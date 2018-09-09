@@ -1,0 +1,6 @@
+FCB = {
+	
+	color = rgb { 165  165  165 }
+
+	color_ui = rgb { 75 75 75}
+}
