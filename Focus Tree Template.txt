@@ -1,0 +1,461 @@
+
+	focus = {
+	  id = A1
+	  icon = GFX_goal_
+	  x = 1
+	  y = 0
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+	  id = A2
+	  icon = GFX_goal_
+	  prerequisite = { focus = A1 }
+	  x = 1
+	  y = 1
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	##A line continues
+
+	focus = {
+	  id = A3
+	  icon = GFX_goal_
+	  prerequisite = { focus = A2 }
+	  x = 1
+	  y = 2
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+	  id = A4
+	  icon = GFX_goal_
+	  prerequisite = { focus = A3 }
+	  x = 1
+	  y = 3
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+	  id = A5
+	  icon = GFX_goal_
+	  prerequisite = { focus = A4 }
+	  x = 1
+	  y = 4
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	##B line begins
+
+	focus = {
+	  id = B1
+	  icon = GFX_goal_
+	  prerequisite = { focus = A2 }
+	  x = 3
+	  y = 2
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+	  id = B2
+	  icon = GFX_goal_
+	  prerequisite = { focus = B1 }
+	  x = 3
+	  y = 3
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+	  id = B3
+	  icon = GFX_goal_
+	  prerequisite = { focus = B2 }
+	  x = 3
+	  y = 4
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+	  id = 1A
+	  icon = GFX_goal_
+	  x = 8
+	  y = 0
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+	  id = 2A
+	  icon = GFX_goal_
+	  prerequisite = { focus = 1A }
+	  x = 8
+	  y = 1
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+	  id = 3A
+	  icon = GFX_goal_
+	  prerequisite = { focus = 2A }
+	  x = 8
+	  y = 2
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	##B Tree
+
+	focus = {
+	  id = 1B
+	  icon = GFX_goal_
+	  prerequisite = { focus = 3A }
+	  x = 6
+	  y = 3
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+	  id = 2B
+	  icon = GFX_goal_
+	  prerequisite = { focus = 1B }
+	  x = 6
+	  y = 4
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+	  id = 3B
+	  icon = GFX_goal_
+	  prerequisite = { focus = 2B }
+	  x = 6
+	  y = 5
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+		id = 4B
+		icon = GFX_goal_
+		prerequisite = { focus = 3B }
+		x = 6
+		y = 6
+		cost = 10
+		completion_reward = {
+
+		}
+
+
+	}
+
+	##C Tree
+
+	focus = {
+	  id = 1C
+	  icon = GFX_goal_
+	  prerequisite = { focus = 3A }
+	  x = 10
+	  y = 3
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+	  id = 2C
+	  icon = GFX_goal_
+	  prerequisite = { focus = 1C }
+	  x = 10
+	  y = 4
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+	  id = 3C
+	  icon = GFX_goal_
+	  prerequisite = { focus = 2C }
+	  x = 10
+	  y = 5
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+	focus = {
+	  id = 4C
+	  icon = GFX_goal_
+	  prerequisite = { focus = 3C }
+	  x = 10
+	  y = 6
+	  cost = 10
+	  completion_reward = {
+
+	  }
+
+
+	}
+
+######
+
+focus = {
+  id = Ak
+  icon = GFX_goal_
+  x = 15
+  y = 0
+  cost = 10
+  completion_reward = {
+
+  }
+
+
+}
+
+focus = {
+  id = Bk
+  icon = GFX_goal_
+  prerequisite = { focus = Ak }
+  x = 12
+  y = 1
+  cost = 10
+  completion_reward = {
+
+  }
+
+
+}
+
+focus = {
+  id = Ck
+  icon = GFX_goal_
+  prerequisite = { focus = Ak }
+  x = 15
+  y = 1
+  cost = 10
+  completion_reward = {
+
+  }
+
+
+}
+
+focus = {
+  id = Dk
+  icon = GFX_goal_
+  prerequisite = { focus = Ak }
+  x = 18
+  y = 1
+  cost = 10
+  completion_reward = {
+
+  }
+
+
+}
+
+##B Tree
+
+focus = {
+  id = Bk1
+  icon = GFX_goal_
+  prerequisite = { focus = Bk }
+  x = 12
+  y = 2
+  cost = 10
+  completion_reward = {
+
+  }
+
+
+}
+
+focus = {
+  id = Bk2
+  icon = GFX_goal_
+  prerequisite = { focus = Bk1 }
+  x = 12
+  y = 3
+  cost = 10
+  completion_reward = {
+
+  }
+
+
+}
+
+focus = {
+  id = Bk3
+  icon = GFX_goal_
+  prerequisite = { focus = Bk2 }
+  x = 12
+  y = 4
+  cost = 10
+  completion_reward = {
+
+  }
+
+
+}
+
+##C Tree
+
+focus = {
+  id = Ck1
+  icon = GFX_goal_
+  prerequisite = { focus = Ck }
+  x = 15
+  y = 2
+  cost = 10
+  completion_reward = {
+
+  }
+
+
+}
+
+focus = {
+  id = Ck2
+  icon = GFX_goal_
+  prerequisite = { focus = Ck1 }
+  x = 15
+  y = 3
+  cost = 10
+  completion_reward = {
+
+  }
+
+
+}
+
+focus = {
+  id = Ck3
+  icon = GFX_goal_
+  prerequisite = { focus = Ck2 }
+  x = 15
+  y = 4
+  cost = 10
+  completion_reward = {
+
+  }
+
+
+}
+
+##D Tree
+
+focus = {
+  id = Dk1
+  icon = GFX_goal_
+  prerequisite = { focus = Dk }
+  x = 18
+  y = 2
+  cost = 10
+  completion_reward = {
+
+  }
+
+
+}
+
+focus = {
+  id = Dk2
+  icon = GFX_goal_
+  prerequisite = { focus = Dk1 }
+  x = 18
+  y = 3
+  cost = 10
+  completion_reward = {
+
+  }
+
+
+}
+
+focus = {
+  id = Dk3
+  icon = GFX_goal_
+  prerequisite = { focus = Dk2 }
+  x = 18
+  y = 4
+  cost = 10
+  completion_reward = {
+
+  }
+
+
+}
